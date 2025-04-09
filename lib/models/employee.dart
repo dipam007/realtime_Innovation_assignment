@@ -31,17 +31,17 @@ class Employee {
       );
 
   Employee copyWith({
-    String? name,
-    String? role,
-    DateTime? startDate,
+    required String name,
+    required String role,
+    required DateTime startDate,
     DateTime? endDate,
   }) {
     return Employee(
       eid: eid,
-      name: name ?? this.name,
-      role: role ?? this.role,
-      startDate: startDate ?? this.startDate,
-      endDate: endDate ?? this.endDate,
+      name: name,
+      role: role,
+      startDate: startDate,
+      endDate: endDate,
     );
   }
 }

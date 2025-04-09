@@ -121,8 +121,9 @@ class _EditEmployeeScreenState extends State<EditEmployeeScreen> {
       }
 
       final updated = widget.employee.copyWith(
+        name: widget.employee.name,
         role: _selectedRole,
-        startDate: _startDate,
+        startDate: _startDate ?? widget.employee.startDate,
         endDate: _endDate,
       );
 
