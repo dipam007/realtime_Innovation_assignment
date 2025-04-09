@@ -1,16 +1,26 @@
 # realtime_innovations_assignment
 
-A new Flutter project.
+A new Flutter project. Features of this application are: Add Employee, Edit Employee, and Delete Employee. I used **Bloc State management** for managing states of application. And I used **Shared preference as local data storage**.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+**Dashboard sreen (Employee lists screen):**
 
-A few resources to get you started if this is your first Flutter project:
+![image](https://github.com/user-attachments/assets/a3cac990-7fa1-4b06-8edc-963fdd731721)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+**ADD Employee screen:**
+
+![image](https://github.com/user-attachments/assets/e882a182-87bf-4307-a486-ac7eaedd6d3e)
+
+
+**Edit Employee screen:**
+
+![image](https://github.com/user-attachments/assets/fe8f669b-1de4-4af3-ab91-75ed2c4bd2ad)
+
+![image](https://github.com/user-attachments/assets/b835ea89-f3c0-4479-a10a-cba37d91c52d)
+
+
+**Delete Employee using dismisible feature:**
+
+![image](https://github.com/user-attachments/assets/6fbd2f74-36ca-4adc-9c96-fabc274e62a9)
