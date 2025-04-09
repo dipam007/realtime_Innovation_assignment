@@ -172,8 +172,10 @@ class _AddEmployeeScreenState extends State<AddEmployeeScreen> {
                 ),
                 trailing: const Icon(Icons.calendar_today),
                 onTap: () => _pickDate(
-                    onDatePicked: (picked) =>
-                        setState(() => _startDate = picked)),
+                    onDatePicked: (picked) => setState(() {
+                          _startDate = picked;
+                          _endDate = null;
+                        })),
               ),
               ListTile(
                 title: const Text("End Date"),
