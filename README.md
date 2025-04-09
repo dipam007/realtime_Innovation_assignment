@@ -4,7 +4,7 @@ A new Flutter project. Features of this application are: Add Employee, Edit Empl
 
 ## Getting Started
 
-**Dashboard sreen (Employee lists screen):**\n
+**Dashboard sreen (Employee lists screen):**
 ![image](https://github.com/user-attachments/assets/a3cac990-7fa1-4b06-8edc-963fdd731721)
 
 **ADD Employee screen:**
