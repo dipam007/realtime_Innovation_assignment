@@ -97,6 +97,9 @@ class EmployeeScreen extends StatelessWidget {
         ),
         onDismissed: (direction) {
           context.read<EmployeeBloc>().add(DeleteEmployee(employee.eid));
+          ScaffoldMessenger.of(context).showSnackBar(
+            const SnackBar(content: Text("Employee data has been deleted")),
+          );
         },
         child: Card(
           shape:

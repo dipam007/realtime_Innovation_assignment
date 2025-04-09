@@ -71,8 +71,9 @@ class _EditEmployeeScreenState extends State<EditEmployeeScreen> {
                     onTap: () {
                       DateTime nextMonth =
                           DateTime(now.year, now.month + 1, now.day);
-                      if (firstDate != null && nextMonth.isBefore(firstDate))
+                      if (firstDate != null && nextMonth.isBefore(firstDate)) {
                         return;
+                      }
                       Navigator.pop(context);
                       onDatePicked(nextMonth);
                     },
