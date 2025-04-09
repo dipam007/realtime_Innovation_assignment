@@ -127,40 +127,4 @@ class EmployeeScreen extends StatelessWidget {
       ),
     );
   }
-
-//   Widget _buildEmployeeTile(BuildContext context, Employee employee) {
-//     return Padding(
-//       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 2),
-//       child: Dismissible(
-//         onDismissed: (direction) {
-//           () {
-//             Navigator.push(
-//               context,
-//               MaterialPageRoute(
-//                 builder: (_) => EditEmployeeScreen(employee: employee),
-//               ),
-//             );
-//           };
-//         },
-//         key: Key(employee.eid),
-//         child: Card(
-//           shape:
-//               RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-//           elevation: 4,
-//           shadowColor: Colors.deepPurple.shade100,
-//           child: ListTile(
-//             leading: const Icon(Icons.person),
-//             title: Text(employee.name),
-//             subtitle: Text(employee.role),
-//             trailing: IconButton(
-//               icon: const Icon(Icons.delete, color: Colors.red),
-//               onPressed: () {
-//                 context.read<EmployeeBloc>().add(DeleteEmployee(employee.eid));
-//               },
-//             ),
-//           ),
-//         ),
-//       ),
-//     );
-//   }
 }
