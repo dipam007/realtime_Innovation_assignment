@@ -24,3 +24,8 @@ A new Flutter project. Features of this application are: Add Employee, Edit Empl
 **Delete Employee using dismisible feature:**
 
 ![image](https://github.com/user-attachments/assets/6fbd2f74-36ca-4adc-9c96-fabc274e62a9)
+
+
+
+https://github.com/user-attachments/assets/6e157ec8-3337-404f-a920-ffff413e8444
+
