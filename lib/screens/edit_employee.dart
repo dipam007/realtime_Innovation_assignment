@@ -114,9 +114,12 @@ class _EditEmployeeScreenState extends State<EditEmployeeScreen> {
       if (_startDate != null &&
           _endDate != null &&
           _endDate!.isBefore(_startDate!)) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(content: Text("End date cannot be before start date")),
-        );
+        ScaffoldMessenger.of(context)
+          ..clearSnackBars()
+          ..showSnackBar(
+            const SnackBar(
+                content: Text("End date cannot be before start date")),
+          );
         return;
       }
 
@@ -131,9 +134,11 @@ class _EditEmployeeScreenState extends State<EditEmployeeScreen> {
           .read<EmployeeBloc>()
           .add(EditEmployee(widget.employee.eid, updated));
 
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text("Employee updated successfully")),
-      );
+      ScaffoldMessenger.of(context)
+        ..clearSnackBars()
+        ..showSnackBar(
+          const SnackBar(content: Text("Employee updated successfully")),
+        );
 
       Navigator.pop(context);
     }
@@ -192,10 +197,12 @@ class _EditEmployeeScreenState extends State<EditEmployeeScreen> {
                 trailing: const Icon(Icons.calendar_today),
                 onTap: () {
                   if (_startDate == null) {
-                    ScaffoldMessenger.of(context).showSnackBar(
-                      const SnackBar(
-                          content: Text("Please select Start Date first")),
-                    );
+                    ScaffoldMessenger.of(context)
+                      ..clearSnackBars()
+                      ..showSnackBar(
+                        const SnackBar(
+                            content: Text("Please select Start Date first")),
+                      );
                     return;
                   }
                   _pickDate(

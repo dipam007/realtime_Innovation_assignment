@@ -106,9 +106,11 @@ class _AddEmployeeScreenState extends State<AddEmployeeScreen> {
   void _submitForm() {
     if (_formKey.currentState?.validate() ?? false) {
       if (_selectedRole == null) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(content: Text("Please select a role")),
-        );
+        ScaffoldMessenger.of(context)
+          ..clearSnackBars()
+          ..showSnackBar(
+            const SnackBar(content: Text("Please select a role")),
+          );
         return;
       }
 
@@ -124,9 +126,11 @@ class _AddEmployeeScreenState extends State<AddEmployeeScreen> {
       context.read<EmployeeBloc>().add(AddEmployee(employee));
 
       // Show confirmation and navigate back
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text("Employee added successfully")),
-      );
+      ScaffoldMessenger.of(context)
+        ..clearSnackBars()
+        ..showSnackBar(
+          const SnackBar(content: Text("Employee added successfully")),
+        );
 
       Navigator.pop(context);
     }
@@ -187,10 +191,12 @@ class _AddEmployeeScreenState extends State<AddEmployeeScreen> {
                 trailing: const Icon(Icons.calendar_today),
                 onTap: () {
                   if (_startDate == null) {
-                    ScaffoldMessenger.of(context).showSnackBar(
-                      const SnackBar(
-                          content: Text("Please select Start Date first")),
-                    );
+                    ScaffoldMessenger.of(context)
+                      ..clearSnackBars()
+                      ..showSnackBar(
+                        const SnackBar(
+                            content: Text("Please select Start Date first")),
+                      );
                     return;
                   }
 
